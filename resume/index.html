@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer Portfolio</title>
+    <meta name="description" content="Explore web, Python, and C projects by Nex-cmd-root, with a project walkthrough and collaboration contact details.">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Sticky Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt;DevPortfolio /&gt;</a>
+            <nav aria-label="Primary navigation">
+                <ul class="nav-links">
+                    <li><a href="#hero">Overview</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Tech Stack</a></li>
+                    <li><a href="#code-work">Python &amp; C</a></li>
+                    <li><a href="#domains">Core Capabilities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/Nex-cmd-root" target="_blank" rel="noopener noreferrer">GitHub <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="btn-theme" aria-label="Toggle light/dark mode" title="Toggle light/dark mode" type="button">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <span class="badge">Full-Stack & Systems Developer</span>
+                <h1>Software Developer & Web Performance Specialist</h1>
+                <p class="hero-subtitle">
+                    Demonstrated expertise spanning Full-Stack Web Applications, Desktop Systems Programming, Web Performance Audits, and Technical Computer Science Foundations.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Selected Web Projects</h2>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-heading">
+                            <i class="fa-solid fa-chart-line project-icon" aria-hidden="true"></i>
+                            <div>
+                                <h3>Smart Money</h3>
+                                <p class="project-type">Personal finance guide and interactive tools</p>
+                            </div>
+                        </div>
+                        <p>A financial literacy site with budgeting and investing content, interactive calculators, and a companion Action Blueprint product page.</p>
+                        <div class="project-links">
+                            <a href="Web%20Projects/Smart%20Money/Landing%20Page/index.html">Open finance guide <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                            <a href="Web%20Projects/Smart%20Money/Landing%20Page/Product%20Page/action.html">Open Action Blueprint <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                        <p class="project-tech">HTML · CSS · JavaScript</p>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-heading">
+                            <i class="fa-solid fa-leaf project-icon" aria-hidden="true"></i>
+                            <div>
+                                <h3>Verdant Greens</h3>
+                                <p class="project-type">Plant nursery storefront</p>
+                            </div>
+                        </div>
+                        <p>A multi-page nursery website with a searchable plant catalog, shopping cart, plant-care guide, and customer contact page.</p>
+                        <div class="project-links">
+                            <a href="Web%20Projects/Verdant%20greens/Index.html">Home <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                            <a href="Web%20Projects/Verdant%20greens/shop.html">Store <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                            <a href="Web%20Projects/Verdant%20greens/care-guide.html">Care guide <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                            <a href="Web%20Projects/Verdant%20greens/contact.html">Contact <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                        </div>
+                        <p class="project-tech">HTML · CSS · JavaScript · Local storage</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Stack Filterable Overview -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Core Stack & Tech Overview</h2>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">All Stack</button>
+                    <button class="filter-btn" data-filter="languages" aria-pressed="false">Languages</button>
+                    <button class="filter-btn" data-filter="frameworks" aria-pressed="false">Frameworks & DB</button>
+                    <button class="filter-btn" data-filter="tools" aria-pressed="false">Infrastructure & Speed</button>
+                    <button class="filter-btn" data-filter="concepts" aria-pressed="false">Core Concepts</button>
+                </div>
+
+                <div class="skills-grid" id="skills-container">
+                    <!-- Languages -->
+                    <div class="skill-card" data-category="languages">
+                        <i class="fa-brands fa-python skill-icon"></i>
+                        <h3>Python</h3>
+                        <p>Backend microservices with FastAPI, event-driven desktop GUIs via Tkinter, data structures, and file I/O operations.</p>
+                    </div>
+                    <div class="skill-card" data-category="languages">
+                        <i class="fa-brands fa-js skill-icon"></i>
+                        <h3>JavaScript</h3>
+                        <p>Client-side interactivity, DOM manipulation, dynamic form controls, and asynchronous execution.</p>
+                    </div>
+                    <div class="skill-card" data-category="languages">
+                        <i class="fa-brands fa-html5 skill-icon"></i>
+                        <h3>HTML5 & CSS3</h3>
+                        <p>Semantic structuring, responsive layouts (Flexbox & Grid), custom properties, and UI prototyping.</p>
+                    </div>
+
+                    <!-- Frameworks & Databases -->
+                    <div class="skill-card" data-category="frameworks">
+                        <i class="fa-solid fa-bolt skill-icon"></i>
+                        <h3>FastAPI</h3>
+                        <p>Constructing lightweight RESTful backends and interfacing Python core logic with web frontends.</p>
+                    </div>
+                    <div class="skill-card" data-category="frameworks">
+                        <i class="fa-solid fa-window-restore skill-icon"></i>
+                        <h3>Tkinter</h3>
+                        <p>Desktop application architecture, event-driven user interfaces, dynamic layouts, and metric visualization.</p>
+                    </div>
+                    <div class="skill-card" data-category="frameworks">
+                        <i class="fa-solid fa-database skill-icon"></i>
+                        <h3>PostgreSQL</h3>
+                        <p>Relational database principles, schema configuration, query operations, and CRUD transaction systems.</p>
+                    </div>
+
+                    <!-- Infrastructure & Speed -->
+                    <div class="skill-card" data-category="tools">
+                        <i class="fa-solid fa-cloud skill-icon"></i>
+                        <h3>Cloudflare & WebP</h3>
+                        <p>Edge infrastructure setups, modern WebP image conversion, and load time minimization for improved SEO.</p>
+                    </div>
+                    <div class="skill-card" data-category="tools">
+                        <i class="fa-solid fa-diagram-project skill-icon"></i>
+                        <h3>Make & n8n</h3>
+                        <p>No-code and low-code workflow automation for streamlining business processes.</p>
+                    </div>
+
+                    <!-- Concepts -->
+                    <div class="skill-card" data-category="concepts">
+                        <i class="fa-solid fa-network-wired skill-icon"></i>
+                        <h3>OSI & TCP/IP Stack</h3>
+                        <p>Network layer breakdown, packet flow mechanics, and protocol selection for backend system architecture.</p>
+                    </div>
+                    <div class="skill-card" data-category="concepts">
+                        <i class="fa-solid fa-square-root-variable skill-icon"></i>
+                        <h3>Computational Mathematics</h3>
+                        <p>Advanced calculus, linear algebra, matrices, discrete mathematics, and computational problem solving.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="code-work" class="section">
+            <div class="container">
+                <h2 class="section-title">Python &amp; C Projects</h2>
+                <div class="project-grid code-project-grid">
+                    <article class="project-card">
+                        <div class="project-heading">
+                            <i class="fa-brands fa-python project-icon" aria-hidden="true"></i>
+                            <div>
+                                <h3>Python</h3>
+                                <p class="project-type">Applications, data, and automation</p>
+                            </div>
+                        </div>
+                        <ul class="project-list">
+                            <li><strong>Flask student roster:</strong> submit and search student records stored in CSV, rendered with Jinja templates.</li>
+                            <li><strong>Course management CLI:</strong> student record workflows with input checks and course-mark handling.</li>
+                            <li><strong>Grade visualizer:</strong> reads classroom records and plots grade data with Matplotlib.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="Python%20and%20C/python/flask%20with%20jinja/app_3.py">Flask source</a>
+                            <a href="Python%20and%20C/python/student_management_system.py">Course manager source</a>
+                            <a href="Python%20and%20C/python/Visual_chart.py">Chart source</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-heading">
+                            <i class="fa-solid fa-code project-icon" aria-hidden="true"></i>
+                            <div>
+                                <h3>C</h3>
+                                <p class="project-type">Systems fundamentals and data structures</p>
+                            </div>
+                        </div>
+                        <ul class="project-list">
+                            <li><strong>ATM simulator:</strong> menu-driven balance, deposit, and withdrawal operations with successful transactions logged to a file.</li>
+                            <li><strong>Binary search tree:</strong> recursive search and post-order cleanup of dynamically allocated nodes.</li>
+                            <li><strong>Linked stack:</strong> push, pop, and peek operations using heap-allocated nodes.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="Python%20and%20C/c/ATM_sim_final.c">ATM source</a>
+                            <a href="Python%20and%20C/c/bst.c">Tree source</a>
+                            <a href="Python%20and%20C/c/stack.c">Stack source</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expandable Professional Capabilities -->
+        <section id="domains" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Professional Capability Domains</h2>
+                <div class="accordion">
+                    
+                    <div class="accordion-item">
+                            <button class="accordion-header">
+                            <span><i class="fa-solid fa-laptop-code"></i> 1. Full-Stack Web Development & Design</span>
+                            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Front-End Design & Styling:</strong> Proficiency in building responsive, clean user interfaces using HTML5, CSS3, modern flexbox/grid layouts, custom color themes, and custom properties.</li>
+                                <li><strong>Client-Side Scripting:</strong> Intermediate knowledge of JavaScript for client-side interactivity, form validation, and DOM manipulation.</li>
+                                <li><strong>Backend Development & APIs:</strong> Hands-on experience using Python with FastAPI to construct lightweight RESTful backends and interface backend logic with frontends.</li>
+                                <li><strong>Database Systems:</strong> Working knowledge of relational database principles and query management with PostgreSQL.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span><i class="fa-solid fa-desktop"></i> 2. Desktop Application & Systems Programming</span>
+                            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>GUI Development:</strong> Experience building desktop applications in Python using Tkinter to construct event-driven user interfaces and dynamic layout visualizations.</li>
+                                <li><strong>Core Logic & Data Handling:</strong> Writing modular Python code utilizing data structures (lists, dictionaries), control flow, and persistent file I/O operations.</li>
+                                <li><strong>Environment & Tooling:</strong> Conversant with terminal/CLI navigation, CPython execution models, and memory/RAM considerations for performance optimization.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span><i class="fa-solid fa-gauge-high"></i> 3. Web Optimization & Performance</span>
+                            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Site Speed Auditing:</strong> Knowledge of conducting web performance speed audits, assessing loading bottlenecks, and analyzing resource delivery.</li>
+                                <li><strong>Asset Optimization:</strong> Modern asset optimization strategies including WebP conversion and Cloudflare edge infrastructure setup.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span><i class="fa-solid fa-brain"></i> 4. Technical Fundamentals & Problem Solving</span>
+                            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Computational Mathematics:</strong> Advanced calculus, linear algebra, matrices, discrete mathematics, and computational problem solving.</li>
+                                <li><strong>Networking Concepts:</strong> In-depth understanding of the OSI model, TCP/IP stack, packet flows, and transport layer protocol selections.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span><i class="fa-solid fa-gears"></i> 5. Business Automation & Digital Strategy</span>
+                            <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Workflow Automation:</strong> Setup and exploration of low-code tools like Make and n8n to automate repetitive operational workflows.</li>
+                                <li><strong>Technical Writing & Research:</strong> Ability to synthesize complex technical subjects into structured documentation and APA 7th academic standards.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-panel">
+                    <p>For project inquiries, proposals, and collaborations, use the dedicated contact page. It includes direct email, phone, and WhatsApp links, plus a proposal draft builder.</p>
+                    <div class="contact-actions">
+                        <a href="contact.html" class="btn btn-primary">Contact &amp; Collaborate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Software Developer Portfolio. Built with HTML5, CSS3, and JavaScript.</p>
+            <div class="footer-links">
+                <a href="contact.html">Contact &amp; collaborations</a>
+                <a href="https://github.com/Nex-cmd-root" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

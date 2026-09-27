@@ -1,0 +1,30 @@
+Student ID: 23300
+Student Grade: 85
+Student Name: Alex blake
+------------------------------
+Student ID: 23500
+Student Grade: 30
+Student Name: Bovix Chanda
+------------------------------
+Student ID: 23501
+Student Grade: 51
+Student Name: Chinso Zulu
+------------------------------
+Student ID: 23502
+Student Grade: 15
+Student Name: Exellence Kunda
+------------------------------
+Student ID: 23503
+Student Grade: 100
+Student Name: Foolishnes Chungu
+------------------------------
+Student ID: 23507
+Student Grade: 81 (A)
+Student Name: John Mubanga
+------------------------------
+Student ID: 27001 (Graduate)
+Student Grade: 100 (A+)
+Student Name: Rainfold
+Thesis Title: Advanced Computer Science
+------------------------------
+ID: 240800 | Name: mundiblille

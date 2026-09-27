@@ -1,0 +1,29 @@
+As of current the website has most of its core functionality complete there's just a few more things to brush up on
+
+1. Populate the main page with more images for the Home page spectacle folder that don't have a price tag and merely demonstrate what variety of plants are available and how good they look when bundles
+
+2. Rename the items in both the, Home page spectacles and On sale items to fit what is in the image and convert to a suitable format like webp
+
+3. Use the items in the On sale items folder for the store webpage and use the numbers as they're price tags
+
+4. Finalize all the tags to properly reconstruct the search and filter options
+
+5. Update file paths to fit the new file naming
+
+6. Use ash2herbal@gmail.com for all instances of the email address
+
+7. Replace all the generic ratings with something more interesting
+
+8. Update every Facebook link back to my page at https://web.facebook.com/profile.php?id=61593869917364
+
+9. Optimize the website so it easily be found in Zambia and under plants and gardening for search engines
+
+10. Add the number 260771594459 for extra support but leave important parts like transactions strictly to 26077597103
+
+11. Give the contact section it's own devoted page with all contact details and optional user email logging
+
+12. Add a light/dark theme and use more vivid colors that evoke a tropical plant like feeling
+
+13. Create a detailed manual of the website features
+
+14. Look at possible hosting options

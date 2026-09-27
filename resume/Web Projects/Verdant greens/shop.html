@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanical Plant Store & Prices | Verdant Greens Ndola, Zambia</title>
+    
+    <!-- Meta description for Local Zambian SEO -->
+    <meta name="description" content="Browse and buy healthy indoor plants, desk succulents, statement palms, and rare exotics in Ndola, Zambia. Live on-sale prices from K400 to K1,200 with free Ndola delivery over K1,000.">
+    <meta name="keywords" content="buy indoor plants Ndola, plant prices Zambia, houseplant catalog Copperbelt, buy succulents Zambia, office desk plants, monstera price Zambia, snake plant Ndola">
+    <meta name="author" content="Verdant Greens">
+    <meta name="geo.region" content="ZM-02">
+    <meta name="geo.placename" content="Ndola">
+    
+    <!-- Open Graph Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_ZM">
+    <meta property="og:site_name" content="Verdant Greens Zambia">
+    <meta property="og:title" content="Botanical Plant Store & Prices | Verdant Greens Ndola">
+    <meta property="og:description" content="30+ greenhouse-acclimatized plants with live prices (K400 - K1,200) and instant WhatsApp ordering in Zambia.">
+    <meta property="og:image" content="images/products/the-greenhouse-masterpiece-k1200.webp">
+    <meta property="og:url" content="https://verdantgreens.com/shop.html">
+
+    <!-- Schema.org Store Catalog Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Verdant Greens Botanical Store",
+      "image": "images/products/the-greenhouse-masterpiece-k1200.webp",
+      "description": "Botanical plant catalog offering indoor greenery, statement palms, and desk plants in Ndola, Zambia.",
+      "telephone": "+26077597103",
+      "priceRange": "K400 - K1,200",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ndola",
+        "addressRegion": "Copperbelt",
+        "addressCountry": "ZM"
+      }
+    }
+    </script>
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Immediate Theme Application -->
+    <script src="theme.js"></script>
+
+    <!-- Deferred JavaScript Dependencies -->
+    <script src="products.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="contact.js" defer></script>
+    <script src="shop.js" defer></script>
+</head>
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="top-bar">
+        <div class="top-bar-info">
+            <span>📞 Orders & Payments: <strong>+260 775 971 03</strong></span>
+            <span>💬 Support: <strong>+260 771 594 459</strong></span>
+            <span>📍 Ndola, Zambia</span>
+        </div>
+        <div>
+            <span class="top-bar-badge">🌿 Free Delivery in Ndola on orders over K1,000</span>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION HEADER -->
+    <header class="main-header">
+        <div class="brand-container">
+            <a href="Index.html" class="brand-logo">Verdant Greens</a>
+            <span class="brand-motto">Branching out into your space</span>
+        </div>
+        <nav class="main-nav">
+            <a href="Index.html">Home</a>
+            <a href="shop.html" class="nav-active">Store & Prices</a>
+            <a href="care-guide.html">Care Guide</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="Index.html#faq">FAQs</a>
+
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle-btn" aria-label="Toggle Dark Theme" title="Toggle Light / Dark Theme">
+                <span class="theme-icon">🌙</span>
+                <span class="theme-text">Dark</span>
+            </button>
+            
+            <!-- Cart Navigation Trigger -->
+            <button class="nav-cart-btn cart-trigger" aria-label="View Shopping Cart">
+                <span>🛒 Cart</span>
+                <span class="cart-count-badge" style="display: none;">0</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- STORE HERO & BANNER -->
+    <section class="store-hero-section">
+        <div class="store-hero-content">
+            <span class="hero-tag">🌱 Live Botanical Catalog • 30 On-Sale Items</span>
+            <h1>Explore Our Greenhouse Plant Collection</h1>
+            <p>From towering statement palms and rare exotics to compact desk succulents. Acclimatized in our Ndola nursery and delivered safely to your doorstep across Zambia.</p>
+        </div>
+    </section>
+
+    <!-- STORE SEARCH & FILTER TOOLBAR -->
+    <div class="store-controls-container">
+        <!-- Search & Sort Row -->
+        <div class="search-sort-bar">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="vg-store-search" placeholder="Search plant name, variety, or traits (e.g., Anthurium, Peace Lily, Low light, Air purifier)..." aria-label="Search plants">
+            </div>
+            <div class="sort-box">
+                <label for="vg-sort-select">Sort by:</label>
+                <select id="vg-sort-select" class="sort-select">
+                    <option value="price-desc" selected>Price: High to Low (Premium First)</option>
+                    <option value="price-asc">Price: Low to High (Budget First)</option>
+                    <option value="popular">Popular & Featured Picks</option>
+                    <option value="name-asc">Botanical Name (A to Z)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Filter Clusters -->
+        <div class="filters-wrapper">
+            <!-- Category Filters -->
+            <div class="filter-group">
+                <span class="filter-label">Category:</span>
+                <div class="filter-pills-list">
+                    <button class="filter-pill active" data-category="all">All Plants (30)</button>
+                    <button class="filter-pill" data-category="statement">👑 Statement & Large</button>
+                    <button class="filter-pill" data-category="indoor">🌿 Indoor Houseplants</button>
+                    <button class="filter-pill" data-category="office">💼 Desk & Office</button>
+                    <button class="filter-pill" data-category="rare">🌸 Rare & Flowering</button>
+                    <button class="filter-pill" data-category="succulent">🌵 Succulents & Cacti</button>
+                    <button class="filter-pill" data-category="bundle">🎁 Curated Bundles</button>
+                </div>
+            </div>
+
+            <!-- Price Tier Dedicated Quick Filters -->
+            <div class="filter-group">
+                <span class="filter-label">Price Range:</span>
+                <div class="filter-pills-list">
+                    <button class="price-pill active" data-price="all">All Prices (K400 - K1,200)</button>
+                    <button class="price-pill" data-price="1000-1200">💎 Premium Tier (K1,000 - K1,200)</button>
+                    <button class="price-pill" data-price="700-950">✨ Mid-Range (K700 - K950)</button>
+                    <button class="price-pill" data-price="400-650">🌱 Starter & Budget (K400 - K650)</button>
+                </div>
+            </div>
+
+            <!-- Care & Environment Filters -->
+            <div class="filter-group">
+                <span class="filter-label">Care & Traits:</span>
+                <div class="filter-pills-list">
+                    <button class="care-pill active" data-care="all">Any Lighting</button>
+                    <button class="care-pill" data-care="pet">🐾 Pet-Friendly Only</button>
+                    <button class="care-pill" data-care="low-light">🌑 Low-Light Tolerant</button>
+                    <button class="care-pill" data-care="bright">☀️ Bright Light / Sun</button>
+                    <button class="care-pill" data-care="purifier">🍃 Air Purifying Pro</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dynamic Results Counter -->
+        <div class="catalog-results-header">
+            <span id="vg-results-count">Showing 30 of 30 botanical plants</span>
+            <span class="price-guarantee-note">🌿 Greenhouse Healthy & Potted Guarantee</span>
+        </div>
+    </div>
+
+    <!-- MAIN PRODUCT CATALOG GRID -->
+    <main class="store-grid-section">
+        <div id="vg-store-product-grid" class="store-grid">
+            <!-- Populated dynamically via shop.js from products.js -->
+        </div>
+    </main>
+
+    <!-- VALUE PROPOSITIONS BANNER -->
+    <section class="trust-banner-section" style="padding: 50px 5%; background: var(--surface); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="golden-rules-grid">
+            <div class="rule-card">
+                <div class="rule-icon-box">🌱</div>
+                <h3>100% Acclimatized</h3>
+                <p>Every plant is greenhouse-nurtured in Ndola to seamlessly adapt to interior home humidity and light cycles.</p>
+            </div>
+            <div class="rule-card">
+                <div class="rule-icon-box">🚚</div>
+                <h3>Safe Regional Delivery</h3>
+                <p>Free delivery in Ndola on orders over K1,000. Custom shockproof courier shipping across the Copperbelt and Zambia.</p>
+            </div>
+            <div class="rule-card">
+                <div class="rule-icon-box">💬</div>
+                <h3>Instant Support</h3>
+                <p>Direct care advice from our botanists via <strong>+260 771 594 459</strong> with every plant purchase.</p>
+            </div>
+            <div class="rule-card">
+                <div class="rule-icon-box">📱</div>
+                <h3>Flexible Payments</h3>
+                <p>Simple Airtel Money, MTN MoMo, Zamtel Kwacha, or Cash on Delivery options in Ndola.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER WITH CONTACT & SOCIALS -->
+    <footer id="contact" class="main-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>About Verdant Greens</h3>
+                <p>Ndola's premier botanical nursery specializing in greenhouse-acclimatized indoor plants, air purifiers, desk succulents, and luxury statement foliage across Zambia.</p>
+                <div class="footer-social-links">
+                    <a href="https://web.facebook.com/profile.php?id=61593869917364" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Visit Facebook Page">
+                        <span>📘 Facebook Page</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Direct Contacts</h3>
+                <p>💳 <strong>Orders & Payments:</strong><br><a href="tel:+26077597103" style="color:#e2e8f0; text-decoration:none;">+260 775 971 03</a></p>
+                <p>💬 <strong>Support & Care:</strong><br><a href="tel:+260771594459" style="color:#e2e8f0; text-decoration:none;">+260 771 594 459</a></p>
+                <p>✉️ <strong>Email:</strong><br><a href="mailto:ash2herbal@gmail.com" style="color:var(--verdant-accent); text-decoration:none;">ash2herbal@gmail.com</a></p>
+                <p>📍 Ndola, Copperbelt, Zambia</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="Index.html">Home Landing Page</a></li>
+                    <li><a href="shop.html">Full Botanical Store</a></li>
+                    <li><a href="care-guide.html">Plant Care Guide & Doctor</a></li>
+                    <li><a href="contact.html">Contact & Inquiry Form</a></li>
+                    <li><a href="Index.html#faq">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Payment Methods</h3>
+                <p>✅ Airtel Money</p>
+                <p>✅ MTN Mobile Money</p>
+                <p>✅ Zamtel Kwacha</p>
+                <p>✅ Cash on Delivery (Ndola)</p>
+                <div style="margin-top: 15px;">
+                    <a href="contact.html#admin" data-action="open-leads-admin" style="font-size:0.8rem; color:#94a3b8; text-decoration:none;">
+                        📋 Customer Inquiries <span class="vg-admin-leads-count" style="display:none;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2026</span> Verdant Greens. All Rights Reserved. Branching out into your space.</p>
+            <p>Ndola, Copperbelt Province, Zambia • <a href="mailto:ash2herbal@gmail.com" style="color:inherit;">ash2herbal@gmail.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

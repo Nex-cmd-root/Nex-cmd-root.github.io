@@ -1,0 +1,98 @@
+Critical Syntax & Runtime Errors
+
+Syntax error in display_statistics: The if statement is missing a colon (:): if not database_array:.
+
+Missing argument in main(): Calling search_student() passes no parameters, but the function requires database_array. Change it to search_student(student_record).
+
+Assigning to append in add_student: Writing database_array.append = (...) attempts to overwrite the list method rather than call it. It should be database_array.append(...) or database_array.extend(...).
+
+Unbound variable errors in update_student and delete_student: If the ID is not found, i is never defined, but execution continues into prompts that access i, raising an UnboundLocalError.
+
+Uncaught ValueError in main: choice = int(input(...)) inside main() will crash the entire program if a user enters non-numeric text.
+
+Data Structure Conflict
+
+Flat list vs. Nested records:
+
+add_student adds a single tuple (id, name, program, mark) into the list.
+
+view_students, update_student, and delete_student treat database_array as a single flat list where items are spaced 4 elements apart (i, i+1, i+2, i+3).
+
+Fix: If required to use a flat list, use database_array.extend([id, name, program, mark]). If storing nested tuples, update indexing across all other functions to access record elements directly (e.g., student[0] for ID).
+
+Logic & Algorithmic Bugs
+
+Infinite loop in view_students: i is set to 0 outside the loop, but never incremented inside (i += 4 is missing). This repeatedly prints the first student indefinitely.
+
+Incorrect slice range in delete_student: del database_array[i:(i + 3)] only removes 3 items because upper bounds in Python slicing are exclusive. To remove 4 elements, use del database_array[i:i + 4].
+
+Precedence error in add_student field check: if not id or name or program or mark: evaluates as (not id) or name or program or mark. If name is a non-empty string, this condition constantly triggers. Use if not all([id, name, program, mark]):.
+
+Float division in loop counter: len(database_array) / 4 returns a float. Use integer division // or iterate using range(0, len(database_array), 4).
+
+Input & Type Validation Flaws
+
+input() always returns a string:
+
+name = str(input(...)) never raises a ValueError. Use name.isalpha() to check for valid characters.
+
+mark = input(...) does not convert the input to a number, leaving mark as a string and rendering the ValueError block inactive.
+
+In search_student, isinstance(id_name, int) always evaluates to False. Use id_name.isdigit() to check if the user entered numbers.
+
+Type mismatch during searches: Searching if id_name not in database_array: compares a string against integer IDs saved in the list, causing lookups to fail.
+
+
+
+def add_student(database_array):
+    print("-- Adding new student --\n")
+    try:
+        student_id = int(input("Student ID: "))
+        name = input("Student name: ")
+        if not name.isalpha():
+            raise ValueError
+        program = input("Student study stream: ")
+        mark = float(input("Overall course mark (1-100): "))
+        if not (1 <= mark <= 100):
+            raise ValueError
+    except ValueError:
+        print("Invalid input entered.\n")
+        return
+
+    # Using flat array extend as expected by your lookup logic
+    database_array.extend([student_id, name, program, mark])
+    print(f"-- Successfully added {name} to the database --\n")
+
+
+def view_students(database_array):
+    if not database_array:
+        print("The student record is currently empty\n")
+        return
+
+    for i in range(0, len(database_array), 4):
+        print(f"Student ID: {database_array[i]}\n"
+              f"Student Name: {database_array[i+1]}\n"
+              f"Student Program: {database_array[i+2]}\n"
+              f"Overall Mark: {database_array[i+3]}\n")
+
+
+def search_student(database_array):
+    query = input("Enter student name or ID: ")
+    
+    # Parse numerical search term
+    target = int(query) if query.isdigit() else query
+
+    if target not in database_array:
+        print(f"{query} not found in student record.\n")
+        return
+
+    i = database_array.index(target)
+    
+    # Adjust index if matched by name instead of ID
+    if isinstance(target, str):
+        i = i - 1
+
+    print(f"Student ID: {database_array[i]}\n"
+          f"Student Name: {database_array[i+1]}\n"
+          f"Student Program: {database_array[i+2]}\n"
+          f"Overall Mark: {database_array[i+3]}\n")

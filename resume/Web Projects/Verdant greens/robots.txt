@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://verdantgreens.com/sitemap.xml
+
+# Verdant Greens Botanical Nursery – Ndola, Zambia
+# Block access to scratch/admin assets
+Disallow: /scratch/
+Disallow: /.gemini/
+

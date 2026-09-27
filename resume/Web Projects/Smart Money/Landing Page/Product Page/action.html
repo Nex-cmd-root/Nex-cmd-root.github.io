@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Action Blueprint - Financial Freedom Guide</title>
+    <link rel="stylesheet" href="action.css">
+    <script src="action.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <div class="brand-logo">AB</div>
+                <span class="brand-name">The Action Blueprint</span>
+            </div>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                <svg class="sun-icon" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.536l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.464 7.464a1 1 0 001.414-1.414L6.171 5.343a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM3 11a1 1 0 100-2H2a1 1 0 100 2h1z" clip-rule="evenodd"></path></svg>
+                <svg class="moon-icon" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="badge">💰 Financial Freedom Guide</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">The Action Blueprint</span><br>
+                <span>Stop Living Paycheck to Paycheck</span>
+            </h1>
+            <p class="hero-description">
+                Tired of making good money but still struggling? Discover actionable, bite-sized money moves that yield massive financial freedom. Take control of your financial destiny now.
+            </p>
+            <div class="hero-cta-group">
+                <a href="https://naytbus.gumroad.com/l/vapjorp" target="_blank" rel="noopener noreferrer" class="btn-gradient shine-effect">
+                    📖 Get The Blueprint – $20
+                </a>
+                <button id="learn-more-btn" class="btn-secondary">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-padding">
+        <div class="main-container">
+            <h2 class="section-title">Inside The Action Blueprint</h2>
+            <p class="section-subtitle">Actionable strategies designed to build real wealth, no matter your salary</p>
+
+            <div class="feature-grid">
+                <div class="feature-card glass-effect">
+                    <div class="icon-wrapper green-gradient">🧠</div>
+                    <h3>Money Mindset Shifts</h3>
+                    <p>Break free from paycheck-to-paycheck thinking and develop the financial mindset of the wealthy.</p>
+                </div>
+
+                <div class="feature-card glass-effect">
+                    <div class="icon-wrapper blue-gradient">📈</div>
+                    <h3>Income Optimization</h3>
+                    <p>Strategies to maximize your earnings and create multiple income streams beyond your day job.</p>
+                </div>
+
+                <div class="feature-card glass-effect">
+                    <div class="icon-wrapper pink-gradient">💳</div>
+                    <h3>Smart Spending</h3>
+                    <p>Learn to spend intentionally, cut wasteful expenses, and build sustainable wealth habits.</p>
+                </div>
+
+                <div class="feature-card glass-effect">
+                    <div class="icon-wrapper yellow-gradient">🚀</div>
+                    <h3>Investment Basics</h3>
+                    <p>Master the fundamentals of investing and build a portfolio that works while you sleep.</p>
+                </div>
+
+                <div class="feature-card glass-effect">
+                    <div class="icon-wrapper purple-gradient">✅</div>
+                    <h3>Action Steps</h3>
+                    <p>Bite-sized, implementable actions you can start TODAY to transform your financial life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Planner Feature -->
+    <section class="section-padding planner-section">
+        <div class="main-container">
+            <h2 class="section-title">See How Small Actions Compounding Fast</h2>
+            <p class="section-subtitle">Input a monthly action saving target to calculate your trajectory.</p>
+            
+            <div class="planner-box glass-effect">
+                <div class="input-container">
+                    <label for="monthly-action-amount">Monthly Savings/Investment ($):</label>
+                    <input type="number" id="monthly-action-amount" value="250" step="25">
+                </div>
+                <div class="planner-results">
+                    <div class="result-card">
+                        <span>6 Months</span>
+                        <h4 id="proj-6m">$1,500</h4>
+                    </div>
+                    <div class="result-card">
+                        <span>1 Year</span>
+                        <h4 id="proj-1y">$3,000</h4>
+                    </div>
+                    <div class="result-card">
+                        <span>2 Years</span>
+                        <h4 id="proj-2y">$6,000</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section-padding pricing-bg">
+        <div class="main-container">
+            <h2 class="section-title">Own Your Copy Today</h2>
+            <div class="pricing-card glass-effect highlight-border">
+                <h3>The Action Blueprint</h3>
+                <p class="guide-tag">A 6-page financial freedom guide</p>
+                <div class="price-display">
+                    <span class="gradient-text price-amount">$20</span>
+                    <span class="price-type">one-time</span>
+                </div>
+                <ul class="checklist">
+                    <li>✓ Instant access (PDF download)</li>
+                    <li>✓ 6 pages of actionable strategies</li>
+                    <li>✓ Money mindset + implementation plans</li>
+                    <li>✓ Start earning financial freedom tomorrow</li>
+                </ul>
+                <a href="https://naytbus.gumroad.com/l/vapjorp" target="_blank" rel="noopener noreferrer" class="btn-gradient shine-effect full-width">
+                    📖 I Want This – $20
+                </a>
+                <p class="guarantee-note">Instant PDF download • Lifetime access • 30-day guarantee</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding">
+        <div class="main-container">
+            <h2 class="section-title">Loved by Users Worldwide</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-effect">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="quote">"Finally understand why I was stuck in the paycheck cycle. This blueprint showed me the exact steps to break free."</p>
+                    <p class="author">Jessica M.</p>
+                    <p class="role">Software Developer</p>
+                </div>
+                <div class="testimonial-card glass-effect">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="quote">"$20 was the best investment. Already implemented 3 strategies and seeing real results in my finances."</p>
+                    <p class="author">David K.</p>
+                    <p class="role">Marketing Manager</p>
+                </div>
+                <div class="testimonial-card glass-effect">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="quote">"Short, actionable, and practical. No fluff. This is exactly what I needed to take control of my money."</p>
+                    <p class="author">Alex T.</p>
+                    <p class="role">Sales Executive</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding">
+        <div class="faq-container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item glass-effect">
+                    <button class="faq-toggle">
+                        <span>How long will it take to read?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The Action Blueprint is 6 focused pages designed to be read in one sitting—typically 15-30 minutes depending on how much you want to absorb. Perfect for a morning coffee session.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-effect">
+                    <button class="faq-toggle">
+                        <span>Is this for beginners or advanced investors?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>This guide is perfect for anyone making good money but still living paycheck to paycheck. Whether you're a complete beginner or have some financial knowledge, you'll find actionable strategies tailored to your situation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass-effect">
+                    <button class="faq-toggle">
+                        <span>What if I'm not satisfied?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Then stay tuned for more updates and improvements!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-banner-section">
+        <div class="main-container text-center">
+            <h2 class="cta-title">Your Financial Freedom Starts Here</h2>
+            <p class="cta-subtitle">For just $20, gain the knowledge and strategies that could change your financial trajectory forever.</p>
+            <a href="https://naytbus.gumroad.com/l/vapjorp" target="_blank" rel="noopener noreferrer" class="btn-gradient shine-effect">
+                📖 Get The Action Blueprint →
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="main-container text-center">
+            <div class="footer-brand">
+                <div class="brand-logo">AB</div>
+                <span class="brand-name">The Action Blueprint</span>
+            </div>
+            <p class="footer-note">Financial freedom strategies for ambitious professionals tired of paycheck-to-paycheck living.</p>
+            <div class="footer-copy">
+                <p>&copy; 2026 vapjorp. All rights reserved.</p>
+                <p>Crafted with care for creators everywhere</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

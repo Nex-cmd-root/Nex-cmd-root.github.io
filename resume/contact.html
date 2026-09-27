@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Nex-cmd-root about software projects, proposals, and collaborations.">
+    <meta name="theme-color" content="#0f172a">
+    <title>Contact &amp; Collaborations | Software Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">&lt;DevPortfolio /&gt;</a>
+            <nav aria-label="Primary navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="https://github.com/Nex-cmd-root" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="btn-theme" aria-label="Toggle light/dark mode" title="Toggle light/dark mode" type="button">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="badge">Projects · Proposals · Collaboration</span>
+                <h1>Contact &amp; Collaborations</h1>
+                <p class="hero-subtitle">Reach out about a project, ask a question, or start a collaboration conversation.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="contact-methods">
+                    <article class="contact-method">
+                        <h3><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</h3>
+                        <a href="mailto:nayt.bus@gmail.com">nayt.bus@gmail.com</a>
+                    </article>
+                    <article class="contact-method">
+                        <h3><i class="fa-solid fa-phone" aria-hidden="true"></i> Mobile</h3>
+                        <a href="tel:+260771594459">+260 771 594 459</a>
+                    </article>
+                    <article class="contact-method">
+                        <h3><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</h3>
+                        <a href="https://wa.me/260771594459?text=Hello%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">Start a WhatsApp chat</a>
+                    </article>
+                </div>
+
+                <section class="guide-content" aria-labelledby="collaborations-title">
+                    <h2 id="collaborations-title">Collaborations</h2>
+                    <p>For collaborations, include the goal, intended users, expected scope, and the kind of contribution you have in mind. That makes it easier to see whether the project is a good fit and agree on a useful next step.</p>
+                    <p>For a code-focused conversation, visit the <a href="https://github.com/Nex-cmd-root" target="_blank" rel="noopener noreferrer">GitHub profile</a> alongside the project links in the portfolio.</p>
+                </section>
+
+                <section class="proposal-section" aria-labelledby="proposal-title">
+                    <div class="contact-wrapper">
+                        <h2 id="proposal-title" class="section-title">Build a Proposal Email</h2>
+                        <form id="proposal-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="proposal-name">Your name</label>
+                                <input type="text" id="proposal-name" name="name" autocomplete="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="proposal-email">Your email</label>
+                                <input type="email" id="proposal-email" name="email" autocomplete="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="proposal-type">Project type</label>
+                                <select id="proposal-type" name="project-type">
+                                    <option>Website design or development</option>
+                                    <option>Improve an existing website</option>
+                                    <option>Python or C application</option>
+                                    <option>Technical collaboration</option>
+                                    <option>Other project</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="proposal-timeline">Preferred timeline</label>
+                                <input type="text" id="proposal-timeline" name="timeline" placeholder="For example, next month">
+                            </div>
+                            <div class="form-group">
+                                <label for="proposal-details">Project details</label>
+                                <textarea id="proposal-details" name="details" rows="6" maxlength="3000" placeholder="Describe the goal, users, and key requirements." required></textarea>
+                            </div>
+                            <div class="proposal-actions">
+                                <button type="button" id="proposal-template" class="btn btn-secondary">Insert outline</button>
+                                <button type="button" id="copy-proposal" class="btn btn-secondary">Copy draft</button>
+                                <button type="submit" class="btn btn-primary">Prepare Email</button>
+                            </div>
+                            <p id="proposal-status" class="form-status" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>Software Developer Portfolio</p>
+            <div class="footer-links">
+                <a href="index.html">Back to portfolio</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
